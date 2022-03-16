@@ -6,13 +6,25 @@
 body{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .imagem-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .card-imagem{
-    width: 100px;
-    height: 100px;
+    /* width: 200px; */
+    height: 200px;
+    margin: 10px;
+    border: solid 5px #000000;
+    filter: grayscale();
+    transition: all .6s;
+}
+
+.card-imagem:hover{
+    filter: none;
 }
